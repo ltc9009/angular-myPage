@@ -1,0 +1,48 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <script type="text/ng-template" id="pages/home.html">
+        <div class="intro">
+          <video class="introVideo" autoplay loop style="width: 1200px;">
+            <source src="images/A0482_F1507_P2_Green_Comp_1.mp4" type="video/mp4">
+          </video>
+          <div class="intro-logo">
+            <h1>NEVER STOP LEARNING</h1>
+          </div>
+          <div class="intro-intro">
+            <p>I'm Rebecca Zhang</p>
+            <p>An engineer, a photo grapher, a fashion lover.</p>
+          </div>
+        </div>
+    </script>
+    <script type="text/ng-template" id="pages/blog.html">
+      <div class="resume">
+        <h1>About me</h1>
+        <p>SKILLS:</p>
+        <p>HTML CSS Javascript mySQL ASP.NET AngularJs</p>
+        <p>C Matlab C++</p>
+        <h1>Work experience</h1>
+        <p>04/2016-present: Web developer at Chesapeake Technology, San Jose, CA</p>
+        <p>03/2015-present: Software engineer at Geometrics Inc, San Jose, CA</p>
+        <h1>Education</h1>
+        <p>Boston University, Master of Engineer, EE major</p>
+      </div>
+    </script>
+    <script type="text/ng-template" id="pages/about.html">
+    </script>
+
+    <div class="navigationBar">
+      <a href="#/">Home</a>
+      <a href="#/blog">Resume</a>
+      <a href="#/about">Portfolio</a>
+    </div>
+
+    <div ng-view></div>
+    <script src="app.js"></script>
+  </body>
+</html>
