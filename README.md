@@ -1,2 +1,2 @@
 # angular-myPage
-This is the personal webiste.
+This is my personal webiste.
