@@ -19,6 +19,20 @@
             <p>An engineer, a photo grapher, a fashion lover.</p>
           </div>
         </div>
+        <div class="row">
+          <div class="col-4">
+          <img class="imgProject" src="images/header.jpg" onmouseover="mOver(this)" onmouseout="mOut(this)">
+              <p class="linkProject1"><a href="https://www.instagram.com/signal_cat/?hl=en">Instagram</a></p>
+          </div>
+          <div class="col-4">
+          <img class="imgProject" src="images/header.jpg" onmouseover="mOver(this)" onmouseout="mOut(this)">
+              <p class="linkProject1"><a href="https://github.com/signalcat/">GitHub</a></p>
+          </div>
+          <div class="col-4">
+          <img class="imgProject" src="images/header.jpg" onmouseover="mOver(this)" onmouseout="mOut(this)">
+              <p class="linkProject1"><a href="https://www.linkedin.com/in/rebecca-he-zhang-64bab990">LinkedIn</a></p>
+          </div>
+        </div>
     </script>
     <script type="text/ng-template" id="pages/blog.html">
       <div class="resume">
@@ -44,5 +58,13 @@
 
     <div ng-view></div>
     <script src="app.js"></script>
+    <script type="text/javascript">
+      function mOver(obj) {
+          obj.style.opacity = "0.5"
+      }
+      function mOut(obj) {
+          obj.style.opacity = "1.0"
+      }
+    </script>
   </body>
 </html>
